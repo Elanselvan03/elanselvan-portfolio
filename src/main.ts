@@ -84,13 +84,15 @@ interface Skill {
       <div class="container-custom text-center">
         <div class="animate-fade-in">
           <!-- Profile Image -->
-          <div class="mb-8">
-            <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-500 p-1">
-              <div class="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                <i class="fas fa-user text-4xl text-gray-600 dark:text-gray-300"></i>
-              </div>
-            </div>
-          </div>
+          <!-- Profile Image -->
+<div class="mb-8">
+  <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-500 p-1">
+    <div class="w-full h-full rounded-full overflow-hidden">
+      <img src="assets/logo.png" alt="Profile Photo" class="w-full h-full object-cover rounded-full" />
+    </div>
+  </div>
+</div>
+
           
           <h1 class="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm <span class="text-gradient">Elanselvan</span>
@@ -521,7 +523,7 @@ interface Skill {
 export class App implements OnInit, OnDestroy {
   @ViewChild('contactForm') contactForm!: ElementRef;
   
-  isDarkMode = false;
+  isDarkMode = true;
   isScrolled = false;
   isMobileMenuOpen = false;
   isSubmitting = false;
